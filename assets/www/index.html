@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>快递查询001</title>
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.2.0.css" />
+    <link rel="stylesheet" href="css/page.css" />
+</head>
+<body>
+    <div data-role="page" id="homepage" class="type-home">
+        <div data-role="content">
+            <div class="content-secondary">
+
+                <div id="jqm-homeheader">
+                    <h1 id="jqm-logo">快递查询001</h1>
+                </div>
+
+
+                <!--<p class="intro"><strong>快递查询001提供快递单号查询，包括申通、EMS、顺丰、圆通、韵达、中通、天天、宅急送、德邦物流、DHL、UPS等快递公司</strong></p>-->
+            </div>
+            <!--/content-primary-->
+
+            <div class="content-primary">
+                <form action="#" method="get">
+
+                    <div data-role="fieldcontain" class="ui-hide-label">
+
+                        <label for="select-company" class="select">选择快递公司:</label>
+                        <select name="select-company" id="company">
+                            <option value="shentong">申通</option>
+                            <option value="shunfeng">顺丰</option>
+                            <option value="ems">EMS</option>
+                            <option value="yuantong">圆通</option>
+                            <option value="yunda">韵达</option>
+                            <option value="zhongtong">中通</option>
+                            <option value="zhaijisong">宅急送</option>
+                            <option value="zhongyouwuliu">中邮物流</option>
+                            <option value="ups">UPS</option>
+                            <option value="dhl">DHL</option>
+
+                        </select>
+                    </div>
+                    <div data-role="fieldcontain" class="ui-hide-label">
+                        <label for="search-basic">快递单号:</label>
+                        <input type="search" name="exnum" placeholder="输入快递单号.." id="exnum" value="" />
+                    </div>
+                    <div data-role="fieldcontain" class="ui-hide-label">
+                        <input type="button" data-theme="b" value="查询" id="btnSearch" />
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+        </div>
+
+        <div data-role="footer" class="footer-docs" data-theme="c">
+            <p>&copy; 2012 DOTVIEW</p>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.2.0.min.js"></script>
+
+        <script type="text/javascript" charset="utf-8" src="js/page.js"></script>
+
+    </div>
+    <!-- Start of third page: #popup -->
+    <div data-role="page" id="popup">
+
+        <div data-role="header" data-theme="b">
+            <a href="#homepage" data-rel="back" data-role="button" data-inline="true" data-icon="back">返回</a>
+            <h1>结果</h1>
+        </div>
+        <!-- /header -->
+
+        <div data-role="content">
+
+            <p id="result"></p>
+            
+        </div>
+        <!-- /content -->
+        <div data-role="footer" class="footer-docs" data-theme="c">
+            <p>&copy; 2012 DOTVIEW</p>
+        </div>
+    </div>
+    <!-- /page popup -->
+
+    <div style="display:none;"><script src="http://s20.cnzz.com/stat.php?id=3018652&web_id=3018652" language="JavaScript"></script></div>
+</body>
+</html>
